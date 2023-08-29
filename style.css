@@ -1,0 +1,578 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1,
+  h3,
+  p {
+    color: white;
+    font-family: K2D;
+  }
+  
+  h1 {
+    font-style: normal;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 24px;
+  }
+  
+  html {
+    background-color: white;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  button{
+    width: 205px;
+    height: 45px;
+    border: none;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 25px;
+    font-size: 24px;
+    padding: 00.5rem;
+    background-color: #fc4850;
+    color: white;
+    justify-content: space-between;
+  }
+
+/*HEADER*/
+
+/* Navbar */
+
+.navbar{
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: 2.7rem;
+}
+
+.brandIcon {
+    /*logo + titulo*/
+    display: flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.5rem;    
+}
+
+.brandIcon h1{
+    /*titulo navbar*/
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 0.5rem;
+    justify-content: baseline;
+    color: #ce5d5b;
+}
+
+.barsButton{
+    /*boton menu*/
+    width: 0.5rem;
+    height: 0.5rem;
+    padding: 0.5rem;
+}
+
+.navbar img {
+    /*imgenes del navbar */
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.menu{
+    /*ocultar menu del navbar desktop*/
+    display: none;
+}
+
+/*FIN HEADER*/
+
+/*MAIN*/
+
+/* Seccion COVER */
+.cover{
+    background-color: #5b5656;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cover article{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+}
+.cover img{
+    margin: 0;
+    padding-top: 3rem;
+    width: 190px;
+    height: 190px;
+    margin: 1rem;
+}
+
+.cover h1{
+    font-size: 40px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;    
+}
+
+.cover p {
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* Seccion bestTechnique */
+.bestTechnique{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bestTechnique h1 {
+    margin: 0.75rem;
+    font-size: 40px;
+    color: #fc4850;
+}
+
+.bestTechnique p{
+    color: black;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 195px;
+    height: 195px;
+    border-radius: 99%;
+    background-color: #fc4850;
+    margin: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* Seccion itsSimple */
+.itsSimple{
+    background-color: #5b5656;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itsSimple img{
+    display: none;
+}
+
+.itsSimple article{
+    align-items: center;
+}
+
+.itsSimple h1 {
+    margin: 0.75rem;
+    font-size: 40px;
+}
+
+.itsSimple div{
+    margin: 2rem;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+div.istSimple-buttons div{
+    margin: 0;
+}
+
+
+
+/* Se reemplaza por button en seccion general
+.itsSimple button {
+    width: 205px;
+    height: 45px;
+    border: none;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 25px;
+    font-size: 24px;
+    padding: 00.5rem;
+    background-color: #fc4850;
+    color: white;
+    justify-content: space-between;
+}
+*/
+
+/* Seccion Testimonials */
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    align-items: center;
+    margin: 1rem;
+}
+
+.container{
+    margin: 0.25rem;
+}
+
+.testimonials h1{
+    margin: 0.75rem;
+    font-size: 40px;
+    color: #fc4850;
+    text-align: center;
+}
+
+.testimonial-people{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1rem;
+}
+  
+.testimonials img {
+    width: 75px;
+    height: 75px;
+    border-radius: 99%;
+    align-self: flex-start;
+    justify-self: auto;
+}
+
+.testimonial-people div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonial-people p{
+    font-style: italic;
+    font-size: 14px;
+    color: #686868;
+}
+
+p.name{
+    padding-top: 0.5rem;
+    align-self: flex-start;
+    font-weight: bold;
+    color: #fc4850;
+}
+
+/* Seccion tryIt */
+
+.tryIt{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #fc4850;
+    color: white;
+    align-items: center;
+}
+
+.tryIt h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.tryIt button{
+    background-color: white;
+    color: #fc4850;
+    margin: 2rem;
+    font: bold;
+    font-weight: bold;
+}
+
+/*FIN MAIN*/
+
+/*FOOTER*/
+
+footer{
+    background-color: #34495e;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-desktop{
+    display: none;
+}
+
+.footer-mobile p{
+    text-align: center;
+    font-size: 15px;
+}
+
+
+/* Version Desktop */
+
+@media screen and (min-width: 721px) {
+
+    .barsButton{
+        display: none;
+    }
+
+    .navbar {
+        height: 4rem;     
+        display: flex;
+        flex-flow: row nowrap;    
+        margin: 0.7rem;       
+    }
+
+    .menu{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu a {
+        margin-top: 1rem;
+        margin-right: 1rem;
+        font-family: K2D;
+        font-size: 24px;
+        text-align: center;
+        text-decoration: none;
+        color: #686868;
+    }
+
+    .menu button{
+        margin-top: 0.55rem;
+    }
+
+    .brandIcon img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .brandIcon h1{
+        font-size: 35px;
+    }
+
+    /*Seccion Cover */
+
+    .cover{
+        width: 100%;
+        height: 570px;
+    }
+
+    .cover article{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;   
+        padding: 4rem;     
+    }
+
+    .cover article img {
+        padding: 1rem;
+        width: 350px;
+        height: 350px;
+    }
+
+    .cover article div {
+        width: 60%;
+        text-align: left;
+        padding: 1rem;
+    }
+
+    .cover article h1{
+        font-size: 70px;
+        line-height: 95px;
+        text-align: left;
+        padding-left: 1rem;
+    }
+
+    .cover article p{
+        font-size: 40px;
+        text-align: left;
+        margin-right: 15rem;
+    }
+
+    .cover img:hover {
+        -webkit-transform: rotateY(180deg);
+        -webkit-transform-style: preserve-3d;
+        transform: rotateY(180deg);
+        transform-style: preserve-3d;
+    }
+
+    /* Seccion bestTechnique */
+
+    .bestTechnique{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin: 2rem;
+    }
+
+    .bestTechnique h1{
+        font-size: 70px;
+    }
+
+    .bestTechnique h3{
+        font-size: 25px;
+    }
+
+    .bestTechnique article{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bestTechnique p{
+        margin-right: 20rem;
+        text-align: left;
+        font-size: 35px;
+    }
+
+    /* Seccion itsSimple */
+
+    .itsSimple{
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        padding: 2rem;
+    }
+
+    .itsSimple img{
+        display: inline;
+        margin-right: 6rem;
+        width: 460px;
+        height: 680px;
+        padding-bottom: 0;
+        margin-bottom: -6.9rem;
+    }
+
+    .itsSimple h1{
+        font-size: 70px;
+        margin: 0;
+    }
+
+    .itsSimple article{
+        padding-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        text-align: left;
+    }
+
+    .itsSimple div{
+        align-items: baseline;
+        text-align: left;
+    }
+
+    .itsSimple p{
+        font-size: 30px;
+        margin: 0;
+    }
+
+    div.istSimple-buttons{
+        display: flex;
+        flex-direction: row; 
+        margin: 0;
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+    }
+
+    p.timer-app{
+        margin-right: 37rem;
+    }
+
+    /* Seccion Testimonials */
+
+    .testimonials{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonials .container{
+        display: flex;
+        flex-direction: row;
+        margin-left: -3rem;
+        margin-top: 1.5rem;
+    }
+
+    .testimonials h1{
+        margin-top: 1rem;
+        margin-left: 2rem;
+        font-size: 70px;
+        align-self: flex-start;
+    }
+
+    .testimonials p{
+        font-size: 18px;
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
+
+    .testimonials img{
+        width: 140px;
+        height: 140px;
+    }
+
+    .testimony{
+        margin-top: 2rem;
+    }
+
+    /* Seccion tryIt */ 
+
+    .tryIt{
+        padding: 7rem;
+    }
+
+    .tryIt h1{
+        font-size: 75px;
+        padding: 1rem;
+    }
+
+    .tryIt button {
+        width: 270px;
+        height: 60px;
+        font-size: 36px;
+    }
+
+    /* FOOTER */
+
+    .footer-desktop{
+        display: flex;
+        padding: 4rem;
+    }
+
+    .footer-desktop p{
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .footer-mobile{
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 1507px) {
+
+    .itsSimple img{
+        display: inline;
+        align-content: flex-end;
+        margin-right: 6rem;
+        width: 460px;
+        height: 680px;
+        padding-bottom: 4.7rem;
+    }
+    
+    
+}
+
+
+
